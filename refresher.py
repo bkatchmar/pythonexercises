@@ -29,6 +29,14 @@ def use_class_to_define_the_rangers():
     ateam.location = "New York"
     ateam.name = "Rangers"
     ateam.print_team_name()
+    
+def use_dict_card():
+    card = dict(
+                suit = "Diamond",
+                rank = "Ace"
+                )
+    print("Card Suit is %s" % card["suit"])
+    print("Card Rank Is %s" % card["rank"])
 
 def print_break():
     print("=================")
@@ -41,3 +49,5 @@ print_break()
 superhero_string_list()
 print_break()
 use_class_to_define_the_rangers()
+print_break()
+use_dict_card()
