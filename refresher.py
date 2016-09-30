@@ -46,14 +46,14 @@ def list_comprehension():
 
 def multi_function_arguments(first, second, third, **options):
     if options.get("action") == "sum":
-        print "The sum is: %d" % (first + second + third)
+        print("The sum is: %d" % (first + second + third))
 
     if options.get("number") == "first":
         return first
     
 def use_multi_argument_function():
     result = multi_function_arguments(1, 2, 3, action="sum", number="first")
-    print "Result: %d" % result
+    print("Result: %d" % result)
 
 def print_break():
     print("=================")
