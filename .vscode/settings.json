@@ -1,4 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.autoComplete.extraPaths": [
+        "C:/Users/brian/AppData/Local/Programs/Python/Python37-32"
+    ]
 }
