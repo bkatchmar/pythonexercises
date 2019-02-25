@@ -8,7 +8,7 @@ class Pet:
         self.age = age
         
     def __str__(self):
-        return self.firstname + " " + self.lastname
+        return self.name + " " + self.age
         
     def SaySomething(self):
         return ""
