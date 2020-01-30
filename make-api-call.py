@@ -1,10 +1,13 @@
 import requests
 
-api_endpoint = "http://mysafeinfo.com/api/data?list=englishmonarchs&format=json"
-r = requests.get(api_endpoint)
-print(r.status_code)
+api_endpoint = "https://rickandmortyapi.com/api/character"
+response = requests.get(api_endpoint).json()
 
-english_rulers = r.json()
+paging_info = response["info"]
+characters = response["results"]
 
-for ruler in english_rulers:
-    print(ruler["nm"] + " of " + ruler["hse"])
+print(paging_info)
+print(characters)
+
+for ruler in characters:
+    print("%s" % (ruler["name"]))
